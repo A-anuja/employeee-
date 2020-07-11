@@ -1,0 +1,95 @@
+				Implementing Arrays and Structure
+
+
+#include<stdio.h>
+
+  typedef  struct{
+        char Name[30];
+        int ID;
+        int Experience;
+        float Salary;
+    }employee;
+
+
+    void main()
+    {
+        int i,n=5;
+        employee emp[n];
+
+
+        printf("Enter %d employee details\n",n);
+        for(i=0;i<n;i++)
+        {
+        printf("Enter the employee name:- ");
+        scanf("%s",emp[i].Name);
+        printf("Enter the employee id: ");
+        scanf("%d",&emp[i].ID);
+        printf("Enter the experience of an employee in year: ");
+        scanf("%d",&emp[i].Experience);
+        printf("Enter the salary of an employee: ");
+        scanf("%f",&emp[i].Salary);
+        }
+        for(i=0;i<n;i++)
+        {
+        printf("\nName :- %s\n",emp[i].Name);
+        printf("ID:-%d\n",emp[i].ID);
+        printf("Experience:-%d\n",emp[i].Experience);
+        printf("Salary:- %f\n",emp[i].Salary);
+        printf("\n");
+        }
+    }
+
+
+
+OUTPUT
+-------------------------------------------------
+Enter 5 employee details
+Enter the employee name:- Darshana
+Enter the employee id:06
+Enter the experience of an employee in year: 5
+Enter the salary of an employee: 15000
+Enter the employee name:- sonam
+Enter the employee id: 04
+Enter the experience of an employee in year: 6
+Enter the salary of an employee: 12000
+Enter the employee name:- aishwarya
+Enter the employee id: 09
+Enter the experience of an employee in year: 3
+Enter the salary of an employee: 8000
+Enter the employee name:- neha
+Enter the employee id: 11
+Enter the experience of an employee in year: 3
+Enter the salary of an employee: 4000
+Enter the employee name:- rinku
+Enter the employee id: 17
+Enter the experience of an employee in year: 2
+Enter the salary of an employee: 5000
+
+Name :- Darshana
+ID:-6
+Experience:-5
+Salary:- 15000.000000
+
+
+Name :- sonam
+ID:-4
+Experience:-6
+Salary:- 12000.000000
+
+
+Name :- aishwarya
+ID:-9
+Experience:-3
+Salary:- 8000.000000
+
+
+Name :- neha
+ID:-11
+Experience:-3
+Salary:- 4000.000000
+
+
+Name :- rinku
+ID:-17
+Experience:-2
+Salary:- 5000.000000
